@@ -117,7 +117,7 @@ Leads should be posted to the URL created and provided by the FRU client using a
       <td><em>dob</em></td>
       <td>No</td>
       <td>Date of birth</td>
-      <td></td>
+      <td>Text</td>
     </tr>
 
     <tr>
