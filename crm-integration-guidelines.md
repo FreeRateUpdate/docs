@@ -37,8 +37,8 @@ Leads should be posted to the URL created and provided by the FRU client using a
       <td>The type of lead</td>
       <td>
         <ul>
-          <li>Refinance</li>
-          <li>Purchase</li>
+          <li>refinance</li>
+          <li>purchase</li>
         </ul>
       </td>
     </tr>
@@ -142,6 +142,7 @@ Leads should be posted to the URL created and provided by the FRU client using a
         <ul>
           <li>Excellent</li>
           <li>Good</li>
+          <li>Fair</li>
           <li>Poor</li>
         </ul>
       </td>
@@ -230,9 +231,9 @@ Leads should be posted to the URL created and provided by the FRU client using a
       <td>Primary use of the property</td>
       <td>
         <ul>
-          <li>Primary Residence</li>
-          <li>Secondary Home</li>
-          <li>Investment Property</li>
+          <li>primary</li>
+          <li>secondary</li>
+          <li>investment</li>
         </ul>
       </td>
     </tr>
@@ -404,6 +405,7 @@ Leads should be posted to the URL created and provided by the FRU client using a
         <ul>
           <li>Excellent</li>
           <li>Good</li>
+          <li>Fair</li>
           <li>Poor</li>
         </ul>
       </td>
