@@ -1,12 +1,12 @@
 ## FreeRateUpdate.com Mortgage Lead Manager Integration Guidelines
 
-FreeRateUpdate.com provides a CRM system which can receive leads from multiple sources. This document provides instructions and guidelines for properly sending leads to the system.
+FreeRateUpdate.com provides a CRM system which can receive leads from multiple sources/campaigns. This document provides instructions and guidelines for properly sending leads to the system.
 
-### Adding a New Lead Source
+### Adding a New Campaign
 
-FRU client admins can add and manage multiple lead sources using the CRM system by [accessing the Lead Sources page](https://leads.freerateupdate.com/account/lead_sources).
+FRU client admins can add and manage multiple lead campaigns using the CRM system by [accessing the Lead Campaigns page](https://leads.freerateupdate.com/account/lead_campaigns).
 
-Adding a new source is as simple as choosing a unique name and pressing the "Add New Source" button. This will generate a unique Post URL for the lead source, e.g., *https://leads.freerateupdate.com/tools/post/gH/pD*
+Adding a new source is as simple as choosing a unique name and pressing the "Create New Link" button. This will generate a unique Post URL for the lead source, e.g., *https://leads.freerateupdate.com/tools/post/gH/pD*
 
 ### Posting Leads and Handling Results
 
