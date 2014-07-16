@@ -328,6 +328,8 @@ Leads should be posted to the URL created and provided by the FRU client using a
           <li>Condo</li>
           <li>Town House</li>
           <li>Cooperative</li>
+          <li>Mobile</li>
+          <li>Manufactured</li>
         </ul>
       </td>
     </tr>
