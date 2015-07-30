@@ -22,14 +22,15 @@ NewHomeValue | A number ranging from 110000 - 2500000 OR the text: "3000000 or m
 PurchaseAgreement | Yes<br />No | Purchase | If consumer has signed a purchase agreement
 EstimatedDownPayment | 3.5% down<br />5% down<br />10% down<br />…<br />other | Purchase | Estimated down payment
 VeteranMilitary | Yes<br />No | All | If consumer is veteran or active military
+DesiredLoanAmount | All | Loan Amount
 FirstName | text | All | Consumer's first name
 LastName | text | All | Consumer's last name
 Email | text | All | Consumer's email
 CellPhone | text | All | Consumer's primary phone number
 HomePhone | text | All | Consumer's alternate phone number
-Street_Address | text | All | Consumer's street address
+StreetAddress | text | All | Consumer's street address
 PropertyCity | text | All | Consumer's city
 PropertyState | 2 letter state abbreviation | All | Consumer's state
 Zip | 5 digit zip code | All | Consumer's zip code
-rid | numeric | All | The lead's unique identifier
+RequestId | numeric | All | The lead's unique identifier
 ltv | numeric | All | total mortgage * (100 / property value)
