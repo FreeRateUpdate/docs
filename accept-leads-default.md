@@ -2,6 +2,8 @@
 
 This document provides instructions on implementing a feed that may be used to immediately notify your CRM system of a lead. These values are sent under the POST method. The following information outlines the format of the data that will be sent to you.
 
+You may receive more fields than listed below in a POST; however any field not listed here is deprecated.
+
 ### Possible Attributes and Values
 
 Field   | Possible Values   | Lead Type   | Description     
