@@ -4,9 +4,9 @@ This document provides instructions on sending leads to FreeRateUpdate.com throu
 
 ### Posting
 
-Data is to be sent via the POST method to:
+Data is to be sent via the POST method and HTTPS protocol to:
 
-http://api.freerateupdate.com/post/lead
+https://api.freerateupdate.com/post/lead
 
 ### Accepted Fields and Values
 
