@@ -7,7 +7,8 @@ This document provides instructions on sending leads to FreeRateUpdate.com throu
 Field | Accepted Values | Required | Description
 ------| --------------- | -------- | -----------
 type | refinance<br>purchase | Yes | If the lead is purchase or refinance
-credit_rating | Excellent<br>Good<br>Fair<br>Poor | Yes | Self assessed credit rating
+credit_rating | excellent<br>good<br>fair<br>poor | Yes | Self assessed credit rating
+property_type | single<br>multi<br>condo<br>town_house<br>cooperative | Yes | Type of property
 existing_rate_type | 30_yr_fixed<br>15_yr_fixed<br>ARM<br>unknown | Refinance | Existing rate type
 desired_rate_type | 30_yr_fixed<br>15_yr_fixed<br>ARM<br>unknown | Yes | Desired rate type
 cash_out | integer | Refinance | Amount cash out for a refinance
