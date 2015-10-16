@@ -8,7 +8,8 @@ Field | Accepted Values | Required | Description
 ------| --------------- | -------- | -----------
 type | refinance<br>purchase | Yes | If the lead is purchase or refinance
 credit_rating | Excellent<br>Good<br>Fair<br>Poor | Yes | Self assessed credit rating
-desired_rate_type | 30_yr_fixed<br>15_yr_fixed<br>ARM | Yes | Desired rate type
+existing_rate_type | 30_yr_fixed<br>15_yr_fixed<br>ARM<br>unknown | Refinance | Existing rate type
+desired_rate_type | 30_yr_fixed<br>15_yr_fixed<br>ARM<br>unknown | Yes | Desired rate type
 cash_out | integer | Refinance | Amount cash out for a refinance
 property_value | integer | Refinance | Value of property
 first_mortgage_balance | integer | Refinance | First mortgage balance
