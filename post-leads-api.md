@@ -16,7 +16,7 @@ property_value | integer | Refinance | Value of property
 first_mortgage_balance | integer | Refinance | First mortgage balance
 first_mortgage_rate | decimal | Refinance | First mortgage rate
 current_fha | yes<br>no | Refinance | If the consumer is currently in a FHA loan
-originated_before | yes<br>no | No | If the consumer's loan has originated before June 2009
+originated_before | yes<br>no | No | If the consumer's FHA loan has originated before June 2009
 found_home | yes<br>no | Purchase | If the consumer has found a home
 new_home_value | integer | Purchase | The value of the home
 purchase_agreement | yes<br>no | No | If the consumer has already signed a purchase agreement
