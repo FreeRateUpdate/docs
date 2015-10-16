@@ -2,6 +2,12 @@
 
 This document provides instructions on sending leads to FreeRateUpdate.com through our API. 
 
+### Posting
+
+Data is to be sent via the POST method to:
+
+http://api.freerateupdate.com/post/lead
+
 ### Accepted Fields and Values
 
 Field | Accepted Values | Required | Description
@@ -32,4 +38,43 @@ property_address | string | No | Street address of the property
 property_city | string | No | City of the property
 property_state | string | Yes | State of the property
 property_zip | string | Yes | Zip code of property
+source | string | Yes | The source this lead came from. i.e. Paid Advertising, Email, Search, etc.
+campaign | string | No | The name of the campaign used for the source
 api_key | string | Yes | Assigned API key
+
+### Response
+
+You will receive a JSON formatted response with the following fields
+
+Field | Value | Description
+----- | ----- | -----------
+success | boolean | If the lead was accepted or not
+errors | array | For each error, an error object with a 'type' and 'message' property
+lead_id | integer | The unique identifier for the lead on success. 0 if not. 
+
+Example Good Response:
+```
+{
+    "success": true,
+    "errors": [],
+    "lead_id": 12345
+}
+```
+
+Example Bad Response
+```
+{
+	"success": false,
+    "errors": [
+        {
+            "message": "First Name is required",
+            "type": "validation"
+        },
+        {
+            "message": "Primary Phone is required",
+            "type": "validation"
+        }
+    ],
+    "lead_id": 0
+}
+```
