@@ -21,7 +21,7 @@ cash_out | integer | Refinance | Amount cash out for a refinance
 property_value | integer | Refinance | Value of property
 first_mortgage_balance | integer | Refinance | First mortgage balance
 first_mortgage_rate | decimal | Refinance | First mortgage rate
-current_fha | yes<br>no | No | If the consumer is currently in a FHA loan
+current_fha | yes<br>no | Refinance | If the consumer is currently in a FHA loan
 originated_before | yes<br>no | No | If the consumer's FHA loan has originated before June 2009
 found_home | yes<br>no | Purchase | If the consumer has found a home
 new_home_value | integer | Purchase | The value of the home
