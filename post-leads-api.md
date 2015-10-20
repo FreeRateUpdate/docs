@@ -51,7 +51,7 @@ Field | Value | Description
 ----- | ----- | -----------
 success | boolean | If the lead was accepted or not
 errors | array | For each error, an error object with a 'type' and 'message' property
-lead_id | integer | The unique identifier for the lead on success. 0 if not. 
+data | object | Will contain our unique identifier for a lead if successful
 
 Example Good Response:
 ```
