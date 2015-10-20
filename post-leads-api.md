@@ -57,9 +57,7 @@ Example Good Response:
 {
     "success": true,
     "errors": [],
-    "data": {
-        "lead_id": 123
-    }
+    "data": {}
 }
 ```
 
