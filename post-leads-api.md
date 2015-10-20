@@ -57,7 +57,11 @@ Example Good Response:
 {
     "success": true,
     "errors": [],
-    "lead_id": 12345
+    "data": [
+    	{
+    		"lead_id": 12345
+    	}
+    ]
 }
 ```
 
@@ -75,6 +79,10 @@ Example Bad Response
             "type": "validation"
         }
     ],
-    "lead_id": 0
+    "data": [
+    	{
+    		"lead_id": 0
+    	}
+    ]
 }
 ```
