@@ -52,13 +52,13 @@ Field | Value | Description
 ----- | ----- | -----------
 success | boolean | If the lead was accepted or not
 errors | array | For each error, an error object with a 'type' and 'message' property. See below for further detail
-data | object | Will contain our unique identifier for a lead if successful
+data | object | Contains more information about the submission result
 
 Example Good Response:
 ```
 {
-    "errors": [],
     "success": true,
+    "errors": [],
     "data": [
         {
             "lead_id": 1880436
