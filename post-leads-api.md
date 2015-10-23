@@ -51,8 +51,16 @@ You will receive a JSON formatted response with the following fields
 Field | Value | Description
 ----- | ----- | -----------
 success | boolean | If the lead was accepted or not
-errors | array | For each error, an error object with a 'type' and 'message' property
+errors | array | For each error, an error object with a 'type' and 'message' property. See below for further detail
 data | object | Will contain our unique identifier for a lead if successful
+
+### Error Types
+
+Error Type | Description
+---------- | ----------
+authentication | There was a problem with authenticating API credentials
+verification | There was a problem with sent data. i.e. a required field was missing.
+verification | Something about the lead itself was invalid. i.e. Loan amount was too low
 
 Example Good Response:
 ```
