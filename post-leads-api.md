@@ -57,11 +57,39 @@ data | object | Will contain our unique identifier for a lead if successful
 Example Good Response:
 ```
 {
-    "success": true,
     "errors": [],
-    "data": {
-        "lead_id": 123
-    }
+    "success": true,
+    "data": [
+        {
+            "lead_id": 1880436
+        },
+        {
+            "lenders": [
+                {
+                    "address": "",
+                    "city": "",
+                    "contact_name": "",
+                    "email": "",
+                    "lender_name": "Lending King",
+                    "phone": "555-983-3735",
+                    "state": "",
+                    "website": "www.lendingking.com",
+                    "zip": ""
+                },
+                {
+                    "address": "1050 Williams",
+                    "city": "Detroit",
+                    "contact_name": "Roger Lender",
+                    "email": "super@loans.com",
+                    "lender_name": "Super Loans",
+                    "phone": "555-251-9080",
+                    "state": "MI",
+                    "website": "http://www.superloans.com",
+                    "zip": "48124"
+                },
+            ]
+        }
+    ]
 }
 ```
 
