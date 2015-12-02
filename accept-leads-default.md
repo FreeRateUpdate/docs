@@ -8,7 +8,7 @@ You may receive more fields than listed below in a POST; however any field not l
 
 Field   | Possible Values   | Lead Type   | Description     
 ------- | ----------------- | ----------- | --------------- 
-LoanPurpose | Refinance<br>Purchase | -- | The type of lead 
+LoanPurpose | refinance<br>purchase | -- | The type of lead 
 CreditRating | Excellent<br />Good<br />Fair<br />Poor | All | User's self-assessed credit
 DesiredRateType | 30-Yr Fixed<br />15-Yr Fixed<br />ARM<br />Don’t Know | All | Desired rate type
 RateType1 |  30-Yr Fixed<br />15-Yr Fixed<br />ARM<br />Don’t Know | Refinance | Existing rate type
