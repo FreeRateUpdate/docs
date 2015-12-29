@@ -51,8 +51,8 @@ You will receive a JSON formatted response with the following fields
 Field | Value | Description
 ----- | ----- | -----------
 success | boolean | If the lead was accepted or not
-errors | array | For each error, an error object with a 'type' and 'message' property. See below for further detail
-data | object | Contains more information about the submission result
+errors | array | For each error, an error object with a 'type', 'message', and 'field' property. If applicable, the 'field' property will have a value matching the above fields to which the error is referencing. See below for further detail
+data | object | Contains more information about the submission result. 
 
 Example Good Response:
 ```
@@ -100,11 +100,13 @@ Example Bad Response
     "errors": [
         {
             "message": "First Name is required",
-            "type": "validation"
+            "type": "validation",
+            "field": "first_name"
         },
         {
             "message": "Primary Phone is required",
-            "type": "validation"
+            "type": "validation",
+            "field": "primary_phone"
         }
     ],
     "data": {}
