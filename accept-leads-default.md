@@ -36,3 +36,4 @@ PropertyState | 2 letter state abbreviation | All | Consumer's state
 Zip | 5 digit zip code | All | Consumer's zip code
 RequestId | numeric | All | The lead's unique identifier
 ltv | numeric | All | total mortgage * (100 / property value)
+ssn | text | All | Consumer's SSN (formatted as ###-##-####) on long form leads only
