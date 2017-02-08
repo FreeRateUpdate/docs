@@ -37,3 +37,6 @@ Zip | 5 digit zip code | All | Consumer's zip code
 RequestId | numeric | All | The lead's unique identifier
 ltv | numeric | All | total mortgage * (100 / property value)
 ssn | text | All | Consumer's SSN (formatted as ###-##-####) on long form leads only
+CurrentVALoan | Yes<br />No | All | If consumer is currently in a VA loan
+Age62orOlder | Yes<br />No | Reverse | If consumer is 62 or older
+UniversalLeadid | 36 character unique string | All | Unique identifier provided by LeadId
