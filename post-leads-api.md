@@ -123,5 +123,5 @@ Example Bad Response
 Error Type | Description
 ---------- | ----------
 authentication | There was a problem with authenticating API credentials
-verification | There was a problem with sent data. i.e. a required field was missing.
+validation | There was a problem with sent data. i.e. a required field was missing.
 verification | Something about the lead itself was invalid. i.e. Loan amount was too low
