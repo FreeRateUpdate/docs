@@ -70,8 +70,6 @@ Example Good Response:
         {
             "lead_id": 1880436
         }
-            ]
-        }
     ]
 }
 ```
