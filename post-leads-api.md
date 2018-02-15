@@ -77,7 +77,7 @@ Example Good Response:
 Example Bad Response
 ```
 {
-	"success": false,
+    "success": false,
     "errors": [
         {
             "message": "First Name is required",
