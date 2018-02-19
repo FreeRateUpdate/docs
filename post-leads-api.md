@@ -45,6 +45,7 @@ property_address | string | No | Street address of the property
 property_city | string | No | City of the property
 property_state | string | Yes | State of the property
 property_zip | string | Yes | Zip code of property
+site_url | string | No | URL the information was generated on
 medium | string | Yes | The source this lead came from. i.e. Paid Advertising, Email, Search, etc.
 campaign | string | No | The name of the campaign used for the source
 ip | string | No | ipv4 or ipv6 address
