@@ -21,6 +21,7 @@ Field | Accepted Values | Required | Description
 type | refinance<br>purchase | Yes | If the lead is purchase or refinance
 credit_rating | excellent<br>good<br>fair<br>poor | Yes | Self assessed credit rating
 property_type | single<br>multi<br>condo<br>town_house<br>cooperative | Yes | Type of property
+property_use | primary<br>secondary<br>investment | No | Property use
 existing_rate_type | 30_yr_fixed<br>15_yr_fixed<br>ARM<br>unknown | Refinance | Existing rate type
 desired_rate_type | 30_yr_fixed<br>15_yr_fixed<br>ARM<br>unknown | Yes | Desired rate type
 cash_out | integer | Refinance | Amount cash out for a refinance
