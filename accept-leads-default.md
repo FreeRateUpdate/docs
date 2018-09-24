@@ -18,7 +18,6 @@ PropertyValue | A number ranging from 97500 - 2000001 | Refinance | Estimated ho
 FirstMortgageBalance | A number ranging from 77500 - 2000001 | Refinance | Total mortgage balance
 FirstMortgageRate | A number ranging from 2.4 - 11 | Refinance | 1st mortgage interest rate
 CurrentFHALoan | Yes<br />No | Refinance | If consumer is currently in a FHA loan
-OriginatedBefore | Yes<br />No | Refinance | If loan originated before June 2009
 FoundHome | Yes<br />No | Purchase | If consumer has found a home
 NewHomeValue | A number ranging from 110000 - 2500000 OR the text: "3000000 or more" | Purchase | Purchase price of new home
 PurchaseAgreement | Yes<br />No | Purchase | If consumer has signed a purchase agreement
@@ -28,15 +27,12 @@ DesiredLoanAmount | All | Loan Amount
 FirstName | text | All | Consumer's first name
 LastName | text | All | Consumer's last name
 Email | text | All | Consumer's email
-CellPhone | text | All | Consumer's primary phone number
-HomePhone | text | All | Consumer's alternate phone number
+Phone | text | All | Consumer's primary phone number
 StreetAddress | text | All | Consumer's street address
 PropertyCity | text | All | Consumer's city
 PropertyState | 2 letter state abbreviation | All | Consumer's state
 Zip | 5 digit zip code | All | Consumer's zip code
 RequestId | numeric | All | The lead's unique identifier
 ltv | numeric | All | total mortgage * (100 / property value)
-ssn | text | All | Consumer's SSN (formatted as ###-##-####) on long form leads only
 CurrentVALoan | Yes<br />No | All | If consumer is currently in a VA loan
-Age62orOlder | Yes<br />No | Reverse | If consumer is 62 or older
 UniversalLeadid | 36 character unique string | All | Unique identifier provided by LeadId
