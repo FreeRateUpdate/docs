@@ -52,7 +52,7 @@ source | string | Yes | Must match the value of utm_source in the query string o
 medium | string | Yes | Must match the value of utm_medium in the query string of the consumer's arrival to your form
 campaign | string | No | The name of the campaign used for the source
 ip | string | No | ipv4 or ipv6 address
-universal_leadid | string | Yes | The ID acquired from Jornaya LeadID
+universal_leadid | string | Yes | The LeadID acquired from Jornaya
 api_key | string | Yes | Assigned API key
 
 ### Response
