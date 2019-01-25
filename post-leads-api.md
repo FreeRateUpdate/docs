@@ -36,7 +36,7 @@ new_home_value | integer | Purchase | The value of the home
 purchase_agreement | yes<br>no | No | If the consumer has already signed a purchase agreement
 estimated_down_payment | decimal | Purchase | Estimated percent down payment
 veteran_military | yes<br>no | Yes | If the user is a veteran or active military
-desired_laon_amount | integer | No | Total loan amount desired
+desired_loan_amount | integer | No | Total loan amount desired
 first_name | string | Yes | Consumer first name
 last_name | string | Yes | Consumer last name
 email | string | Yes | Consumer email address
