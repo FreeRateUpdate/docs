@@ -34,6 +34,7 @@ originated_before | yes<br>no | No | If the consumer's FHA loan has originated b
 found_home | yes<br>no | Purchase | If the consumer has found a home
 new_home_value | integer | Purchase | The value of the home
 purchase_agreement | yes<br>no | No | If the consumer has already signed a purchase agreement
+days_from_buying | yes<br>no | Purchase | If the consumer is buying within 60 days
 estimated_down_payment | decimal | Purchase | Estimated percent down payment
 veteran_military | yes<br>no | Yes | If the user is a veteran or active military
 desired_loan_amount | integer | No | Total loan amount desired
