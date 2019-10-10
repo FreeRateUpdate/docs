@@ -16,7 +16,7 @@ https://staging-api.freerateupdate.com/post/client_performance
 
 ### Accepted Fields and Values
 
-**An identifier (lead_id, email or phone) is required.**
+**At least one identifier (lead_id, email or phone) is required.**
 
 Field | Accepted Values | Required | Description
 ------| --------------- | -------- | -----------
