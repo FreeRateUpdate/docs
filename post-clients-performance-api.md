@@ -51,12 +51,12 @@ Example Bad Response
     "success": false,
     "errors": [
         {
-            "message": "Status is required",
-            "type": "validation",
+            "type": "verification",
+            "message": "Status is a required field",
             "field": "status"
         }
     ],
-    "data": {}
+    "data": []
 }
 ```
 ### Error Types
