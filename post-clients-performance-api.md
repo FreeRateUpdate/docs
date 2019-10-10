@@ -16,10 +16,12 @@ https://staging-api.freerateupdate.com/post/client_performance
 
 ### Accepted Fields and Values
 
+**An identifier (lead_id, email or phone) is required.**
+
 Field | Accepted Values | Required | Description
 ------| --------------- | -------- | -----------
 api_key | string | Yes | Assigned API key
-status | string | Yes | Performance status ("credit_pull", "setup")
+status | "credit_pull" or "setup" | Yes | Performance status
 lead_id | number | No | FreeRateUpdate Lead ID
 email | string | No | Consumer email address
 phone | string | No | Consumer primary phone number
