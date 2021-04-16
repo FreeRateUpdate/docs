@@ -8,12 +8,6 @@ Data is to be sent via the POST method and HTTPS protocol to the following URL:
 
 https://api.freerateupdate.com/post/lead
 
-### Testing
-
-Please post all tests to the following URL:
-
-https://staging-api.freerateupdate.com/post/lead
-
 ### Accepted Fields and Values
 
 Field | Accepted Values | Required | Description
