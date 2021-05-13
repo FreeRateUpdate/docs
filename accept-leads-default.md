@@ -13,6 +13,7 @@ CreditRating | Excellent<br />Good<br />Fair<br />Poor | All | User's self-asses
 DesiredRateType | 30-Yr Fixed<br />15-Yr Fixed<br />ARM<br />Don’t Know | All | Desired rate type
 RateType1 |  30-Yr Fixed<br />15-Yr Fixed<br />ARM<br />Don’t Know | Refinance | Existing rate type
 PropertyType | Single<br />Multi<br />Condo<br />Town House<br />Cooperative | All | Type of home
+PropertyUse | Primary<br />Secondary<br />Investment</br> | All | Home Usage
 CashOut | A number ranging from 2500 - 95000, OR the text: "100000 or more" | Refinance | Cash out
 PropertyValue | A number ranging from 97500 - 2000001 | Refinance | Estimated home value
 FirstMortgageBalance | A number ranging from 77500 - 2000001 | Refinance | Total mortgage balance
