@@ -29,9 +29,9 @@ be a regular shared lender. Live transfer or CSR premium internet send
 creates a total of 5 data matches (including initial) plus live transfer.
 
 ### Phone lead
-Immediate live transfer creates 5 data matches to GG shared clients only 20
-minutes later. If no live transfer the 5 data matches happen immediately.
+Immediate live transfer creates 6 data matches to GG shared clients only 20
+minutes later. If no live transfer the 6 data matches happen immediately.
 
 ### New lead from aged info.
-Immediate live transfer creates 5 data matches to GG shared clients only 20
-minutes later. If no live transfer the 5 data matches happen immediately.
+Immediate live transfer creates 6 data matches to GG shared clients only 20
+minutes later. If no live transfer the 6 data matches happen immediately.
