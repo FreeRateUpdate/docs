@@ -8,6 +8,8 @@ Data is to be sent via the POST method and HTTPS protocol to the following URL:
 
 https://api.freerateupdate.com/post/lead
 
+data must in in form-data
+
 ### Accepted Fields and Values
 
 Field | Accepted Values | Required | Description
