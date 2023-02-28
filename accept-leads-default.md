@@ -28,7 +28,7 @@ DesiredLoanAmount | All | Loan Amount
 FirstName | text | All | Consumer's first name
 LastName | text | All | Consumer's last name
 Email | text | All | Consumer's email
-Phone | text | All | Consumer's primary phone number
+CellPhone | text | All | Consumer's primary phone number
 StreetAddress | text | All | Consumer's street address
 PropertyCity | text | All | Consumer's city
 PropertyState | 2 letter state abbreviation | All | Consumer's state
