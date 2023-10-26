@@ -1,3 +1,5 @@
+# DEPRECIATED
+
 ## Posting Guidelines
 
 This document provides instructions on sending leads to FreeRateUpdate.com through our API. 
