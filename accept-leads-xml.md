@@ -26,7 +26,6 @@ FirstName | text | All | Consumer's first name
 LastName | text | All | Consumer's last name
 Email | text | All | Consumer's email
 CellPhone | text | All | Consumer's primary phone number
-HomePhone | text | All | Consumer's alternate phone number
 Street_Address | text | All | Consumer's street address
 PropertyCity | text | All | Consumer's city
 State | 2 letter state abbreviation | All | Consumer's state
@@ -65,7 +64,6 @@ ltv | numeric | All | total mortgage * (100 / property value)
   <State>TX</State>
   <Zip>77429</Zip>
   <CellPhone>5555559861</CellPhone>
-  <HomePhone/>
   <Desired_Loan_Amount>104000</Desired_Loan_Amount>
   <ltv>0</ltv>
 </lead>
