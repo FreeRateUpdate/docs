@@ -1,3 +1,5 @@
+# DEPRECIATED
+
 ## Posting Guidelines
 
 This document provides instructions on sending a lead performance status to FreeRateUpdate.com through our API. 
