@@ -4,7 +4,7 @@ This document provides instructions on implementing an XML feed that may be used
 
 You may receive more elements than listed below in a POST;
 
-### Possible Attributes and Values
+## Possible Attributes and Values
 
 | Field                | Possible Values                                                                             | Lead Type | Description                                                                                    |
 | -------------------- | ------------------------------------------------------------------------------------------- | --------- | ---------------------------------------------------------------------------------------------- |
@@ -27,7 +27,7 @@ You may receive more elements than listed below in a POST;
 | FoundHome            | yes<br />no                                                                                 | Purchase  | If consumer has found a home                                                                   |
 | PurchaseAgreement    | yes<br />no                                                                                 | Purchase  | If consumer has signed a purchase agreement                                                    |
 | DaysFromBuying       | Buying within 90<br />Researching Options                                                   | Purchase  | If consumer plans to purchase within 90 days or just researching                               |
-| FIrstTimeBuyer       | yes<br />no                                                                                 | Purchase  | If consumer is a first time home buyer                                                         |
+| FirstTimeBuyer       | yes<br />no                                                                                 | Purchase  | If consumer is a first time home buyer                                                         |
 | NewHomeValue         | A number ranging from 60000 - 3000000                                                       | Purchase  | Purchase price of new home                                                                     |
 | EstimatedDownPayment | numeric percentage (e.g. 3.5, 5, 10, 20, 25)                                                | Purchase  | Estimated down payment as a percentage of the purchase price                                   |
 | DesiredLoanAmount    | numeric                                                                                     | All       | Loan amount                                                                                    |
@@ -73,7 +73,7 @@ You may receive more elements than listed below in a POST;
   <VeteranMilitary>no</VeteranMilitary>
   <FoundHome>yes</FoundHome>
   <PurchaseAgreement>no</PurchaseAgreement>
-  <DaysFromBuying>no</DaysFromBuying>
+  <DaysFromBuying>Researching Options</DaysFromBuying>
   <FIrstTimeBuyer>no</FIrstTimeBuyer>
   <NewHomeValue>130000</NewHomeValue>
   <EstimatedDownPayment>20</EstimatedDownPayment>
@@ -98,7 +98,7 @@ The following elements may still appear in the XML for backwards compatibility w
 
 | Deprecated element | Replaced by / Notes |
 | ------------------ | ------------------- |
-| leads_property_value | Desired_Loan_Amount |
+| leads_property_value | DesiredLoanAmount |
 | RateType1 | DesiredRateType |
 | signed_contract | PurchaseAgreement |
 | Other_Phone | Always blank |
