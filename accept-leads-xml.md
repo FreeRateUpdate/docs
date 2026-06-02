@@ -1,68 +1,109 @@
-## XML Posting Guidelines
+# XML Posting Guidelines
 
 This document provides instructions on implementing an XML feed that may be used to immediately notify your CRM system of a lead. The following information outlines the format of the XML that will be sent to you.
 
+You may receive more elements than listed below in a POST; any element not listed here is deprecated and should not be relied on.
+
 ### Possible Attributes and Values
 
-Field   | Possible Values   | Lead Type   | Description     
-------- | ----------------- | ----------- | --------------- 
-LoanPurpose | Refinance<br>Purchase | -- | The type of lead 
-CreditRating | Excellent<br />Good<br />Fair<br />Poor | All | User's self-assessed credit
-DesiredRateType | 30-Yr Fixed<br />15-Yr Fixed<br />ARM<br />Don’t Know | All | Desired rate type
-PropertyType | Single<br />Multi<br />Condo<br />Town House<br />Cooperative | All | Type of home
-CashOut | A number ranging from 2500 - 95000, OR the text: "100000 or more" | Refinance | Cash out
-PropertyValue | A number ranging from 97500 - 2000001 | Refinance | Estimated home value
-FirstMortgageBalance | A number ranging from 77500 - 2000001 | Refinance | Total mortgage balance
-FirstMortgageRate | A number ranging from 2.4 - 11 | Refinance | 1st mortgage interest rate
-CurrentFHALoan | Yes<br />No | Refinance | If consumer is currently in a FHA loan
-OriginatedBefore | Yes<br />No | Refinance | If loan originated before June 2009
-FoundHome | Yes<br />No | Purchase | If consumer has found a home
-NewHomeValue | A number ranging from 110000 - 2500000 OR the text: "3000000 or more" | Purchase | Purchase price of new home
-PurchaseAgreement | Yes<br />No | Purchase | If consumer has signed a purchase agreement
-EstimatedDownPayment | 3.5% down<br />5% down<br />10% down<br />…<br />other | Purchase | Estimated down payment
-VeteranMilitary | Yes<br />No | All | If consumer is veteran or active military
-FirstName | text | All | Consumer's first name
-LastName | text | All | Consumer's last name
-Email | text | All | Consumer's email
-CellPhone | text | All | Consumer's primary phone number
-Street_Address | text | All | Consumer's street address
-PropertyCity | text | All | Consumer's city
-State | 2 letter state abbreviation | All | Consumer's state
-Zip | 5 digit zip code | All | Consumer's zip code
-rid | numeric | All | The lead's unique identifier
-ltv | numeric | All | total mortgage * (100 / property value)
+| Field                | Possible Values                                                                             | Lead Type | Description                                                                                    |
+| -------------------- | ------------------------------------------------------------------------------------------- | --------- | ---------------------------------------------------------------------------------------------- |
+| RequestId            | numeric                                                                                     | All       | The lead's unique identifier                                                                   |
+| UniversalLeadid      | 36 character unique string                                                                  | All       | Jornaya LeadiD token for the consumer's submission                                             |
+| TCPA                 | 40 character unique string                                                                  | All       | Trusted form certificate                                                                       |
+| LoanPurpose          | refinance & home equity<br />purchase                                                       | All       | The type of lead                                                                               |
+| CreditRating         | Excellent<br />Good<br />Fair<br />Poor                                                     | All       | User's self-assessed credit                                                                    |
+| DesiredRateType      | 30-Yr Fixed                                                                                 | All       | Desired rate type                                                                              |
+| PropertyType         | Single<br />Multi<br />Condo<br />Town House<br />Cooperative<br />Mobile<br />Manufactured | All       | Type of home                                                                                   |
+| PropertyUse          | primary<br />secondary<br />investment                                                      | All       | How the property is used                                                                       |
+| PropertyValue        | A number ranging from 60000 - 2000001                                                       | Refinance | Estimated home value                                                                           |
+| CashOut              | A number ranging from 5000 - 500000, OR the text "500000 or more"                           | Refinance | Requested cash out amount                                                                      |
+| MortgageBalance      | A number ranging from 60000-1200000, OR the text of "Over 1200000"                          | Refinance | Current mortgage balance                                                                       |
+| CashOutReason        | reduce-debt<br />home-improvement<br />emergency<br />other                                 | Refinance | Consumer's stated reason for requesting cash out. Only present when CashOut is greater than 0. |
+| CurrentFHALoan       | yes<br />no                                                                                 | Refinance | If consumer is currently in an FHA loan                                                        |
+| CurrentVALoan        | yes<br />no                                                                                 | All       | If consumer is currently in a VA loan                                                          |
+| HomeEquity           | yes<br />no                                                                                 | Refinance | If consumer is requesting a home equity loan                                                   |
+| VeteranMilitary      | yes<br />no                                                                                 | All       | If consumer is a veteran or active military                                                    |
+| FoundHome            | yes<br />no                                                                                 | Purchase  | If consumer has found a home                                                                   |
+| PurchaseAgreement    | yes<br />no                                                                                 | Purchase  | If consumer has signed a purchase agreement                                                    |
+| DaysFromBuying       | Buying within 90<br />Researching Options                                                   | Purchase  | If consumer plans to purchase within 90 days or just researching                               |
+| FIrstTimeBuyer       | yes<br />no                                                                                 | Purchase  | If consumer is a first time home buyer                                                         |
+| NewHomeValue         | A number ranging from 60000 - 3000000                                                       | Purchase  | Purchase price of new home                                                                     |
+| EstimatedDownPayment | numeric percentage (e.g. 3.5, 5, 10, 20, 25)                                                | Purchase  | Estimated down payment as a percentage of the purchase price                                   |
+| DesiredLoanAmount    | numeric                                                                                     | All       | Loan amount                                                                                    |
+| ltv                  | numeric                                                                                     | All       | Loan to value (total mortgage * 100 / property value)                                          |
+| FirstName            | text                                                                                        | All       | Consumer's first name                                                                          |
+| LastName             | text                                                                                        | All       | Consumer's last name                                                                           |
+| Email                | text                                                                                        | All       | Consumer's email                                                                               |
+| CellPhone            | 10 digit numeric                                                                            | All       | Consumer's primary phone number                                                                |
+| HomePhone            | 10 digit numeric (may be blank)                                                             | All       | Consumer's secondary phone, if provided                                                        |
+| StreetAddress        | text                                                                                        | All       | Consumer's street address                                                                      |
+| PropertyCity         | text                                                                                        | All       | Property city                                                                                  |
+| PropertyState        | 2 letter state abbreviation                                                                 | All       | Property state                                                                                 |
+| Zip                  | 5 digit zip code                                                                            | All       | Property zip code                                                                              |
+| campaign_id          | text                                                                                        | All       | Lead campaign identifier                                                                       |
+| Price                | numeric                                                                                     | All       | Lead price for the receiving client                                                            |
+
+### Notes
+
+* All `yes`/`no` fields are lowercase.
+* `PropertyUse` values are lowercase (`primary`, `secondary`, `investment`).
+* Empty fields are sent as self-closing elements (e.g. `<CashOut/>`).
 
 ### Sample Feed
-```
+
+```xml
 <?xml version="1.0"?>
 <lead>
-  <rid>186052</rid>
-  <LoanPurpose>Purchase</LoanPurpose>
-  <PropertyType>Single</PropertyType>
+  <RequestId>186052</RequestId>
+  <LoanPurpose>purchase</LoanPurpose>
+  <UniversalLeadid/>
+  <TCPA/>
   <CreditRating>Good</CreditRating>
   <DesiredRateType>30-Yr Fixed</DesiredRateType>
-  <CashOut/>
+  <PropertyType>Single</PropertyType>
+  <PropertyUse>primary</PropertyUse>
   <PropertyValue/>
-  <FirstMortgageBalance/>
-  <FirstMortgageRate/>
-  <NewHomeValue>130000</NewHomeValue>
-  <EstimatedDownPayment>20% down</EstimatedDownPayment>
-  <PropertyUse/>
-  <SecondMortgageBalance>0</SecondMortgageBalance>
+  <CashOut/>
+  <MortgageBalance/>
+  <CashOutReason/>
   <CurrentFHALoan/>
-  <OriginatedBefore/>
-  <signed_contract>Yes</signed_contract>
+  <CurrentVALoan>no</CurrentVALoan>
+  <HomeEquity>no</HomeEquity>
   <VeteranMilitary>no</VeteranMilitary>
-  <FoundHome>Yes</FoundHome>
+  <FoundHome>yes</FoundHome>
+  <PurchaseAgreement>no</PurchaseAgreement>
+  <DaysFromBuying>no</DaysFromBuying>
+  <FIrstTimeBuyer>no</FIrstTimeBuyer>
+  <NewHomeValue>130000</NewHomeValue>
+  <EstimatedDownPayment>20</EstimatedDownPayment>
+  <DesiredLoanAmount>104000</DesiredLoanAmount>
+  <ltv>80</ltv>
   <FirstName>PERSON</FirstName>
   <LastName>SMITH</LastName>
   <Email>person@yahoo.com</Email>
-  <Street_Address/>
-  <PropertyCity>Cypress</PropertyCity>
-  <State>TX</State>
-  <Zip>77429</Zip>
   <CellPhone>5555559861</CellPhone>
-  <Desired_Loan_Amount>104000</Desired_Loan_Amount>
-  <ltv>0</ltv>
+  <HomePhone/>
+  <StreetAddress/>
+  <PropertyCity>Cypress</PropertyCity>
+  <PropertyState>TX</PropertyState>
+  <Zip>77429</Zip>
+  <campaign_id>purchase</campaign_id>
 </lead>
 ```
+
+### Deprecated fields
+
+The following elements may still appear in the XML for backwards compatibility with legacy integrations. New integrations should ignore them.
+
+| Deprecated element | Replaced by / Notes |
+| ------------------ | ------------------- |
+| leads_property_value | Desired_Loan_Amount |
+| RateType1 | DesiredRateType |
+| signed_contract | PurchaseAgreement |
+| Other_Phone | Always blank |
+| specials | Always blank |
+| adnetwork | Always blank |
+| blockclient | Always blank |
+| method | Internal use |
+| xxTrustedFormCertUrl | Always blank |
