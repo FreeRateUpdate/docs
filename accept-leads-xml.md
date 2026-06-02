@@ -2,7 +2,7 @@
 
 This document provides instructions on implementing an XML feed that may be used to immediately notify your CRM system of a lead. The following information outlines the format of the XML that will be sent to you.
 
-You may receive more elements than listed below in a POST; any element not listed here is deprecated and should not be relied on.
+You may receive more elements than listed below in a POST;
 
 ### Possible Attributes and Values
 

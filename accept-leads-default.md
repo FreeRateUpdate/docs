@@ -1,8 +1,8 @@
 # Posting Guidelines
 
-This document provides instructions on implementing a feed that may be used to immediately notify your CRM system of a lead. Values are sent under the POST method (as `application/x-www-form-urlencoded`). The following outlines the format of the data that will be sent to you.
+This document provides instructions on implementing a feed that may be used to immediately notify your CRM system of a lead. Values are sent under the POST method. The following outlines the format of the data that will be sent to you.
 
-You may receive more fields than listed below in a POST; any field not listed here is deprecated and should not be relied on.
+You may receive more fields than listed below in a POST;
 
 ### Possible Attributes and Values
 
